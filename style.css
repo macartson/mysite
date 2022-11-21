@@ -1,0 +1,26 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+	font-family: Calibri, sans-serif;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+form {
+  font-family: Calibri, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+  border-spacing: 1em;
+}
+
+input {
+  margin: 1;
+  font-size: 1.2em;
+  font-family: Calibri, sans-serif;
+  color: #666;
+  background: lightgoldenrodyellow;
+  border-radius: .5rem;
+}

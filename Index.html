@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Banco de Horas</title>
+    <script type="text/javascript">
+        function validar() {
+            // var nome = formuser.nome.value;
+            var email = formuser.email.value;
+            var senha = formuser.senha.value;
+
+            //if (nome == "") {
+            //    alert('Preencha o campo nome');
+            //    formuser.nome.focus();
+            //    return false;
+            if (email == "" || email.indexOf('@') == -1) {
+                alert('Preencha o campo email válido');
+                formuser.email.focus();
+                return false;
+            } else if (senha == "" || senha.length <= 5) {
+                alert('Preencha o campo senha com no minimo 6 caracteres');
+                formuser.senha.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Banco de Horas</h1>
+        <form name="formuser" action="enviar.php" method="POST">
+            Email:<input type="email" name="email"><br><br>
+            Senha:<input type="password" name="senha"><br><br>
+
+            <input type="button" value="Login" onclick="return validar()">
+        </form>
+</body>
+
+</html>
